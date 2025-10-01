@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --grey-50: #f4f4f5;
+    --grey-100: #c4c8ca;
+    --grey-150: #cecece;
+    --grey-200: #939393;
+    --grey-250: #69737b;
+
+    --cian-50: #009CDE;
+    --cian-100: #01688d;
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+}

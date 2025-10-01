@@ -1,0 +1,17 @@
+section{
+    height: 100%;
+    width: 250px;
+    background-color: var(--grey-250) ;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    height: 53px;
+    color: var(--grey-100)
+}
+.barra:hover{
+    background-color: var(--grey-100);
+    color: black;
+}

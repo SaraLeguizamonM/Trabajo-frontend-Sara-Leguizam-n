@@ -1,0 +1,11 @@
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--grey-50);
+}
+.bodyd{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+
+}

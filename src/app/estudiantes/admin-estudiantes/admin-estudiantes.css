@@ -1,0 +1,122 @@
+
+.registro{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 20px;
+    color: var(--grey-250);
+    font-size: 14px;
+
+}
+.btnRegistro{
+    height: 38px;
+    width: 170px;
+    border-radius: 7px;
+    border: 3px solid var(--cian-50);
+    background-color: var(--grey-50);
+    color: var(--cian-50);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+.btnRegistro:hover{
+    background-color: var(--cian-50);
+    color: white;
+    cursor: pointer;
+}
+
+.filtro{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 90px;
+    width: 100fr; 
+    margin: 0px 20px; 
+    padding: 25px;
+    gap: 15px;
+    color: var(--grey-250);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    
+}
+.filSeleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+
+}
+.filtroInternoG{
+    border-radius: 7px;
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--grey-250);
+}
+.filtroInternoId{
+    width: 60px;
+}
+
+.buttons{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btnBuscar{
+    height: 38px;
+    width: 120px;
+    border-radius: 7px;
+    border: 3px solid var(--cian-50);
+    background-color: var(--cian-50);
+    color: white;
+
+}
+.btnBuscar:hover{
+    background-color: white;
+    color: var(--cian-50);
+    cursor: pointer;
+}
+
+.filLimpiar{
+    height: 38px;
+    width: 120px;
+    border-radius: 7px;
+    border: 3px solid var(--cian-50);
+    background-color: white;
+    color: var(--cian-50)
+
+}
+.filLimpiar:hover{
+    background-color: var(--cian-50);
+    color: white;
+    cursor: pointer;
+}
+
+.div-2col{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    
+}
+
+.tablas{
+    background-color: white;
+    height: 390px;
+    width: 100fr; 
+    margin: 20px 20px; 
+    padding: 25px;
+    gap: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+
+}
+.resultados{
+    
+
+}

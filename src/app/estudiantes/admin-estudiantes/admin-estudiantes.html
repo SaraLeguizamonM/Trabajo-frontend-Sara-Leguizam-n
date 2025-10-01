@@ -60,14 +60,129 @@
     <div class = 'tablas'>
         <div class = 'resultados'>
             <h2>Resultados</h2>
-            <label for = 'resultado'>Mostrar</label>
-            <select class = 'resultados' id = 'resultado'>
+
+            <div class="nResult">
+            <label for = 'mostrar'>Mostrar</label>
+                <select class = 'resultados' id = 'mostrar'>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
+            </div>
+        </div>
+
+        <div>
+            <table class = 'tabla'>
+                <thead class = 'color2'>
+                    <th>Código</th>
+                    <th>Identificación</th>
+                    <th>Estudiante</th>
+                    <th>Grado</th>
+                    <th>Grupo</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </thead>
+
+                <tbody>
+                    <tr class = 'color1'>
+                        <td>2022101</td>
+                        <td>TI 1088123456</td>
+                        <td>Camila Fernández Rojas</td>
+                        <td>10</td>
+                        <td>A</td>
+                        <td>En curso</td>
+                        <td>
+                            <div>
+                                <button>
+                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                                </button>
+                                <button>
+                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                </button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022102</td>
+                        <td>TI 1088123499</td>
+                        <td>Juan Felipe Montoya Ríos</td>
+                        <td>10</td>
+                        <td>A</td>
+                        <td>Aprobado</td>
+                        <td>
+                            <div>
+                                <button>
+                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                                </button>
+                                <button>
+                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                </button>
+                            </div>
+                            
+                        </td>>
+                    </tr>
+                    <tr class = 'color1'>
+                        <td>2022103</td>
+                        <td>CC 1089456789</td>
+                        <td>Luisa María Cruz Hernández</td>
+                        <td>10</td>
+                        <td>B</td>
+                        <td>Reprobado</td>
+                        <td>
+                            <div>
+                                <button>
+                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                                </button>
+                                <button>
+                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                </button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>2022104</td>
+                        <td>TI 1088120099</td>
+                        <td>Ana María Bedoya López</td>
+                        <td>10</td>
+                        <td>B</td>
+                        <td>En curso</td>
+                        <td>
+                            <div>
+                                <button>
+                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                                </button>
+                                <button>
+                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                </button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                    <tr class = 'color1'>
+                        <td>2022105</td>
+                        <td>TI 1087013499</td>
+                        <td>Santiago Sánchez Rivera</td>
+                        <td>10</td>
+                        <td>A</td>
+                        <td>En curso</td>
+                        <td>
+                            <div>
+                                <button>
+                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                                </button>
+                                <button>
+                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                </button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
     </div>

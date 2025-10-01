@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './admin-estudiantes.css'
 })
 export class AdminEstudiantes {
-
+  imgQuipuxE:string="../../../assets/eyeQ.png";
+  imgQuipuxB:string="../../../assets/basQ.png";
 }

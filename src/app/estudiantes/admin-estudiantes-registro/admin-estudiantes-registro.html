@@ -1,0 +1,208 @@
+<section>
+
+    <div class='formulario'>
+        <h2>Informacion del estudiante</h2>
+
+
+        <div class='filSeccion'>
+            <div class='forSeleccion'>
+                <label>Codigo</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el codigo">
+            </div>
+            <div class='forSeleccion'>
+                <label for='id'>Identificación</label>
+                <div class="div-2col">
+                    <select class='formularioInternoG formularioInternoId' id='id'>
+                        <option value="id1"> </option>
+                        <option value="id2">TI</option>
+                        <option value="id3">CC</option>
+                    </select>
+                    <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Numero de documento">
+                </div>
+            </div>
+            <div class='forSeleccion'>
+                <label>Primer nombre</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el primer nombre">
+            </div>
+            <div class='forSeleccion'>
+                <label>Segundo nombre (opcional)</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el segundo nombre">
+            </div>
+        </div>
+
+        <div class='filSeccion'>
+            <div class='forSeleccion'>
+                <label>Primer apellido</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el primer apellido">
+            </div>
+            <div class='forSeleccion'>
+                <label>Segundo apellido</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el segundo apellido">
+            </div>
+            <div class='forSeleccion'>
+                <label>Sexo</label>
+                <div class="tipoFM">
+                    <div class="btnFMAlinear">
+                        <input class='formularioInternoG btnFM' type='radio' name='idBuscar'>
+                        <label>Femenino</label>
+                    </div>
+                    <div class="btnFMAlinear">
+                        <input class='formularioInternoG btnFM' type='radio' name='idBuscar'>
+                        <label>Masculino</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class='forSeleccion'>
+                <label>Masculino</label>
+                <input class='formularioInternoG' type='date' name='idBuscar'>
+            </div>
+        </div>
+
+        <div class='filSeccion'>
+            <div class='forSeleccion'>
+                <label>Telefono residencia (opcional)</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el numero">
+            </div>
+            <div class='forSeleccion'>
+                <label>Celular</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ingrese el numero">
+            </div>
+            <div class='forSeleccion'>
+                <label>Correo electrónico</label>
+                <input class='formularioInternoG' type='text' name='idBuscar' placeholder="Ej. prueba@correo.com">
+            </div>
+            <div class='forSeleccion'>
+                <label for='cR'>Ciudad de residencia</label>
+                <select class='formularioInternoG' id='cR'>
+                    <option value="cR1"> </option>
+                    <option value="cR2">Medellin</option>
+                    <option value="cR3">Cali</option>
+                    <option value="cR3">Cartagena</option>
+                    <option value="cR3">Bogota</option>
+                </select>
+            </div>
+        </div>
+        <div class='ultimaFila'>
+            <div class='forSeleccion'>
+                <label>Direccion de residencia</label>
+                <input class='formularioInternoG' type='text' name='idBuscar'placeholder="Ej. Carrera 12 #45-78 Piso 2">
+            </div>
+            <div class='forSeleccion'>
+                <label for='grado'>Grado</label>
+                <select class='formularioInternoG' id='grado'>
+                    <option value="grados"> </option>
+                    <option value="grado10">10</option>
+                    <option value="grado11">11</option>
+                    <option value="grado12">12</option>
+                </select>
+            </div>
+            <div class='forSeleccion'>
+                <label for='grupo'>Grupo</label>
+                <select class='formularioInternoG' id='grupo'>
+                    <option value="grupos"> </option>
+                    <option value="grupo1">A</option>
+                    <option value="grupo2">B</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <div class='tablas'>
+        <div class='resultados'>
+            <h2>Resultados</h2>
+
+            <div class="nResult">
+                <label for='mostrar'>Mostrar</label>
+                <select class='resultados' id='mostrar'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <table class='tabla'>
+                <thead>
+                    <th>Código</th>
+                    <th>Año</th>
+                    <th>Grado</th>
+                    <th>Grupo</th>
+                    <th>Estado</th>
+                    <th>Nota promedio</th>
+                </thead>
+
+                <tbody>
+                    <tr class='color1'>
+                        <td>2022101</td>
+                        <td>2022</td>
+                        <td>10</td>
+                        <td>A</td>
+                        <td  class='textTabla'>
+                            <select class='filTabla' id='estado'>
+                                <option value="estado1">En curso</option>
+                                <option value="estado2">Aprobado</option>
+                                <option value="estado3">Reprobado</option>
+                            </select>
+                        </td>
+                        <td class='textTabla'>
+                            <input  class='filTabla'  type='text'>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2022102</td>
+                        <td>2021</td>
+                        <td>9</td>
+                        <td>C</td>
+                        <td>Aprobado</td>
+                        <td>4.0</td>
+                    </tr>
+                    <tr class='color1'>
+                        <td>2022103</td>
+                        <td>2020</td>
+                        <td>9</td>
+                        <td>B</td>
+                        <td>Reprobado</td>
+                        <td>2.4</td>
+                    </tr>
+                    <tr>
+                        <td>2022104</td>
+                        <td>2019</td>
+                        <td>8</td>
+                        <td>B</td>
+                        <td>Aprobado</td>
+                        <td>3.6</td>
+                    </tr>
+                    <tr class='color1'>
+                        <td>2022105</td>
+                        <td>2018</td>
+                        <td>7</td>
+                        <td>A</td>
+                        <td>Aprobado</td>
+                        <td>3.8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class='mostarNum'>
+            <h3>Mostrando 1 al 5 de 150 registros</h3>
+
+            <div class='num'>
+                <button>Primero</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>Ultimo</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

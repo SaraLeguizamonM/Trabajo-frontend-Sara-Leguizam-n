@@ -1,3 +1,7 @@
+h1{
+    font-size: 16px;
+}
+
 body{
     display:flex;
     flex-direction: column;
@@ -7,5 +11,49 @@ body{
     display: grid;
     grid-template-columns: 250px 1fr;
     height: 100%;
+}
 
+.registro{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 20px;
+    color: var(--grey-250);
+    font-size: 14px;
+}
+.btnRegistro{
+    height: 38px;
+    width: 170px;
+    border-radius: 7px;
+    border: 3px solid var(--cian-50);
+    background-color: var(--grey-50);
+    color: var(--cian-50);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+}
+.btnRegistro:hover{
+    background-color: var(--cian-50);
+    color: white;
+    cursor: pointer;
+}
+.botonesRegistro{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 15px
+}
+.btnR{
+    height: 38px;
+    width: 120px;
+    border-radius: 7px;
+    border: 3px solid var(--cian-50);
+    background-color: var(--cian-50);
+    color: white;
+}
+.btnR:hover{
+    background-color: white;
+    color: var(--cian-50);
+    cursor: pointer;
 }

@@ -1,7 +1,22 @@
 <body>
-<app-header/>
-<section class="bodyd">
-    <app-slide-bar/>
-    <app-admin-estudiantes/>
-</section>
+    <app-header />
+    <section class="bodyd">
+        <app-slide-bar />
+
+        <div>
+            <div class='registro'  *ngIf="!nuevoRegistro">
+                <h1>Administracion de Estudiantes</h1>
+                <button class='btnRegistro' (click)="registroV()">Nuevo registro</button>
+            </div>
+             <div class='registro'  *ngIf="nuevoRegistro">
+                <h1>Administracion de Estudiantes / Estudiante</h1>
+            </div>
+            <app-admin-estudiantes *ngIf="!nuevoRegistro" />
+            <app-admin-estudiantes-registro *ngIf="nuevoRegistro" />
+            <div *ngIf="nuevoRegistro" class = 'botonesRegistro'>
+                <button class = 'btnR'(click)="registroF()">Cancelar</button>
+                <button class = 'btnR' (click)="registroF()">Guardar</button>
+            </div>
+        </div>
+    </section>
 </body>

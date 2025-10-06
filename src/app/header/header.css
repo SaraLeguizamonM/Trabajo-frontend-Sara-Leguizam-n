@@ -4,6 +4,7 @@ header{
     padding: 15px;
     height: 35px;
     justify-content: space-between;
+    box-shadow: 0px 3px 6px #00000015;
 }
 img{
     height: 100%;

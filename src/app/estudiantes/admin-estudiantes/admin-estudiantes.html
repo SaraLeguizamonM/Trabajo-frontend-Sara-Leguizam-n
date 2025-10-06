@@ -1,15 +1,10 @@
 <section>
-    <div class = 'registro'>
-        <h1>Administracion de Estudiantes</h1>
-        <button class = 'btnRegistro'>Nuevo registro</button>       
-    </div>
 
     <div class = 'filtro'>
         <div class = 'filSeleccion'>
             <label for = 'grado'>Grado</label>
             <select class = 'filtroInternoG' id = 'grado'>
                 <option value="grados"> </option>
-                <option value="grado9">9</option>
                 <option value="grado10">10</option>
                 <option value="grado11">11</option>
                 <option value="grado12">12</option>
@@ -22,8 +17,6 @@
                 <option value="grupos"> </option>
                 <option value="grupo1">A</option>
                 <option value="grupo2">B</option>
-                <option value="grupo3">C</option>
-                <option value="grupo4">D</option>
             </select>
         </div>
 
@@ -32,8 +25,8 @@
             <div class="div-2col">
                 <select class = 'filtroInternoG filtroInternoId' id = 'id'>
                     <option value="id1"> </option>
-                    <option value="id2">Ti</option>
-                    <option value="id3">Cc</option>
+                    <option value="id2">TI</option>
+                    <option value="id3">CC</option>
                 </select>
                 <input class = 'filtroInternoG' type = 'text' name = 'idBuscar' placeholder = "Numero de documento">
             </div>
@@ -75,7 +68,7 @@
 
         <div>
             <table class = 'tabla'>
-                <thead class = 'color2'>
+                <thead>
                     <th>Código</th>
                     <th>Identificación</th>
                     <th>Estudiante</th>
@@ -94,12 +87,12 @@
                         <td>A</td>
                         <td>En curso</td>
                         <td>
-                            <div>
-                                <button>
-                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE">
                                 </button>
-                                <button>
-                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
                                 </button>
                             </div>
                             
@@ -113,16 +106,16 @@
                         <td>A</td>
                         <td>Aprobado</td>
                         <td>
-                            <div>
-                                <button>
-                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE" >
                                 </button>
-                                <button>
-                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB" >
                                 </button>
                             </div>
                             
-                        </td>>
+                        </td>
                     </tr>
                     <tr class = 'color1'>
                         <td>2022103</td>
@@ -132,12 +125,12 @@
                         <td>B</td>
                         <td>Reprobado</td>
                         <td>
-                            <div>
-                                <button>
-                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE">
                                 </button>
-                                <button>
-                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
                                 </button>
                             </div>
                             
@@ -151,12 +144,12 @@
                         <td>B</td>
                         <td>En curso</td>
                         <td>
-                            <div>
-                                <button>
-                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE">
                                 </button>
-                                <button>
-                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
                                 </button>
                             </div>
                             
@@ -170,19 +163,31 @@
                         <td>A</td>
                         <td>En curso</td>
                         <td>
-                            <div>
-                                <button>
-                                    <img [src]="imgQuipuxE" alt="quipuxE" width="20" height="20">
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE">
                                 </button>
-                                <button>
-                                    <img [src]="imgQuipuxB" alt="quipuxB" width="20" height="20">
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
                                 </button>
                             </div>
-                            
                         </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <div class = 'mostarNum'>
+            <h3>Mostrando 1 al 5 de 150 registros</h3>
+
+            <div class = 'num'>
+            <button>Primero</button> 
+            <button>1</button> 
+            <button>2</button>
+            <button>3</button> 
+            <button>4</button>
+            <button>Ultimo</button> 
+            </div>
+        
         </div>
 
     </div>

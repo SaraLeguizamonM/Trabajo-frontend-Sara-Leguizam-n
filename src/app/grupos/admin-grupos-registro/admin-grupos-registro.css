@@ -1,0 +1,240 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: var(--grey-250);
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid var(--grey-100);
+    padding: 0 10px;
+    color: var(--grey-250);
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px;
+    grid-column: 1 / -1;
+}
+
+.btnBuscar{
+    height: 38px;
+    width: 120px;
+    border-radius: 7px;
+    border: 3px solid var(--cian-50);
+    background-color: var(--cian-50);
+    color: white;
+}
+
+.btnBuscar:hover{
+    background-color: white;
+    color: var(--cian-50);
+    cursor: pointer;
+}
+
+.btnCancelar{
+    height: 38px;
+    width: 120px;
+    border-radius: 7px;
+    border: 3px solid var(--grey-100);
+    background-color: var(--grey-100);
+    color: var(--grey-250);
+}
+
+.btnCancelar:hover{
+    background-color: white;
+    color: var(--grey-250);
+    cursor: pointer;
+}
+.formulario{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: white;
+    
+    width: 100fr; 
+    margin: 0px 20px; 
+    padding: 25px;
+    gap: 15px;
+    color: var(--grey-250);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    
+}
+.filSeccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.forSeleccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.formularioInternoG{
+    border-radius: 7px;
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--grey-250);
+}
+.formularioInternoId{
+    width: 60px;
+}
+.tipoFM{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.btnFM{
+    height: 18px;
+    width: 18px;
+    border-radius: 7px;
+
+}
+.btnFM:hover{
+    background-color: var(--cian-50);
+    cursor: pointer;
+}
+.btnFMAlinear{
+    display: flex;
+    align-items: center;
+}
+.ultimaFila{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr 1fr;
+    gap: 10px;
+}
+
+
+.div-2col{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    
+}
+
+.tablas{
+    background-color: white;
+    height: 365px;
+    width: 100fr; 
+    margin: 20px; 
+    padding: 0px 25px 25px 25px;
+    gap: 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    color: var(--grey-250);
+}
+.resultados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grey-250);
+    font-size: 12px;
+}
+.nResult{
+    display: flex;
+    flex-direction: row;
+    color: var(--grey-250);
+
+}
+.buttonsIcons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.iconImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+}
+.iconImg:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.tabla{
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.color1{
+    background-color: var(--grey-50);
+}
+
+thead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--cian-100);
+    height: 45px;
+    color: var(--grey-50);
+    font-size: 15px;
+}
+tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    height: 45px;
+    
+}
+td{
+    padding: 15px;
+}
+
+.mostarNum{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-200);
+    font-size: 12px;
+}
+.num{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 25px;
+    
+}
+.num > button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px #00000029;
+    font-size: 15px;
+
+}
+.filTabla{
+
+    height: 30px;
+    width: 100px;
+}
+.textTabla{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+
+}

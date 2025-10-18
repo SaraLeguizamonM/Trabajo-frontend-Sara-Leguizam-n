@@ -5,7 +5,7 @@
     align-items: center;
     background-color: white;
     
-    width: 100fr; 
+    width: 100%; 
     margin: 0px 20px; 
     padding: 25px;
     gap: 15px;
@@ -26,9 +26,6 @@
     width: 100%;
     box-sizing: border-box;
     color: var(--grey-250);
-}
-.filtroInternoId{
-    width: 60px;
 }
 
 .buttons{
@@ -64,16 +61,10 @@
     color: var(--cian-100);
 }
 
-.div-2col{
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    
-}
-
 .tablas{
     background-color: white;
     height: 435px;
-    width: 100fr; 
+    width: 100%; 
     margin: 20px; 
     padding: 0px 25px 25px 25px;
     gap: 15px;

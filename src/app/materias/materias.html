@@ -1,0 +1,18 @@
+<body>
+    <app-header />
+    <section class="bodyd">
+        <app-slide-bar />
+
+        <div>
+            <div class='registro'  *ngIf="!nuevoRegistro">
+                <h1>Administracion de Materias</h1>
+                <button class='btnRegistro' (click)="registroV()">Nuevo registro</button>
+            </div>
+             <div class='registro'  *ngIf="nuevoRegistro">
+                <h1>Administracion de Materias / Materia</h1>
+            </div>
+            <app-admin-materias *ngIf="!nuevoRegistro" />
+            <app-admin-materias-registro *ngIf="nuevoRegistro" (save)="onMateriaSaved($event)" (cancel)="registroF()" />
+        </div>
+    </section>
+</body>

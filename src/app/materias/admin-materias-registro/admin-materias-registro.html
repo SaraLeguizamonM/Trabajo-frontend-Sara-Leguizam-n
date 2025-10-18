@@ -1,0 +1,31 @@
+<section class="form-container">
+    <div class="form-group">
+        <label for="codigo">Código</label>
+        <input id="codigo" type="text" placeholder="Ingrese el código" [(ngModel)]="materia.codigo" name="codigo">
+    </div>
+
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Ingrese el nombre" [(ngModel)]="materia.nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="grado">Grado</label>
+        <select id="grado" [(ngModel)]="materia.grado" name="grado">
+            <option value="">Seleccione</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="intensidad">Intensidad Horaria</label>
+        <input id="intensidad" type="number" placeholder="Ej. 3" [(ngModel)]="materia.intensidad" name="intensidad">
+    </div>
+
+    <div class="buttons">
+        <button class="btnCancelar" (click)="onCancel()">Cancelar</button>
+        <button class="btnBuscar" (click)="guardar()">Guardar</button>
+    </div>
+</section>

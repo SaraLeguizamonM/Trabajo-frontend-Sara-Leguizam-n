@@ -1,0 +1,18 @@
+<body>
+    <app-header />
+    <section class="bodyd">
+        <app-slide-bar />
+
+        <div>
+            <div class='registro'  *ngIf="!nuevoRegistro">
+                <h1>Administracion de Grupos</h1>
+                <button class='btnRegistro' (click)="registroV()">Nuevo registro</button>
+            </div>
+             <div class='registro'  *ngIf="nuevoRegistro">
+                <h1>Administracion de Grupos / Grupo</h1>
+            </div>
+            <app-admin-grupos *ngIf="!nuevoRegistro" />
+            <app-admin-grupos-registro *ngIf="nuevoRegistro" (cancel)="registroF()" />
+        </div>
+    </section>
+</body>

@@ -1,0 +1,22 @@
+<body>
+    <app-header />
+    <section class="bodyd">
+        <app-slide-bar />
+
+        <div>
+            <div class='registro'  *ngIf="!generarInforme">
+                <h1>Informes</h1>
+                <button class='btnRegistro' (click)="generarV()">Generar Informe</button>
+            </div>
+             <div class='registro'  *ngIf="generarInforme">
+                <h1>Informes / Generar Informe</h1>
+            </div>
+            <app-admin-informes *ngIf="!generarInforme" />
+            <app-admin-informes-generar *ngIf="generarInforme" />
+            <div *ngIf="generarInforme" class = 'botonesRegistro'>
+                <button class = 'btnR'(click)="generarF()">Cancelar</button>
+                <button class = 'btnR' (click)="generarF()">Guardar</button>
+            </div>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,86 @@
+<section>
+    <div class = 'filtro'>
+        <div class = 'filSeleccion'>
+            <label for = 'codigo'>Código</label>
+            <input class = 'filtroInternoG' type = 'text' name = 'codigoBuscar' placeholder = "Código de la materia" [(ngModel)]="codigoFiltro">
+        </div>
+
+        <div class = 'filSeleccion'>
+            <label for = 'nombre'>Nombre</label>
+            <input class = 'filtroInternoG' type = 'text' name = 'nombreBuscar' placeholder = "Nombre de la materia" [(ngModel)]="nombreFiltro">
+        </div>
+
+        <div class = 'filSeleccion'>
+            <label for = 'grado'>Grado</label>
+            <select class = 'filtroInternoG' id = 'grado' [(ngModel)]="gradoFiltro">
+                <option value="">Todos</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+        </div>
+
+        <div class = 'buttons'>
+            <button class = 'btnBuscar' (click)="filtrarMaterias()">Buscar</button>
+            <a class = 'linkLimpiar' (click)="limpiarFiltros()">Limpiar</a>
+        </div>
+    </div>
+
+    <div class = 'tablas'>
+        <div class = 'resultados'>
+            <h2>Resultados</h2>
+
+            <div class="nResult">
+                <label for = 'mostrar'>Mostrar</label>
+                <select class = 'resultados' id = 'mostrar'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <table class = 'tabla'>
+                <thead>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Grado</th>
+                    <th>Intensidad Horaria</th>
+                    <th>Acciones</th>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let materia of filteredMaterias" [ngClass]="{'color1': filteredMaterias.indexOf(materia) % 2 !== 0}">
+                        <td>{{materia.codigo}}</td>
+                        <td>{{materia.nombre}}</td>
+                        <td>{{materia.grado}}</td>
+                        <td>{{materia.intensidad}}</td>
+                        <td>
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE">
+                                </button>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class='mostarNum'>
+            <h3>Mostrando {{filteredMaterias.length}} de {{materias.length}} registros</h3>
+
+            <div class='num'>
+                <button>Primero</button>
+                <button>1</button>
+                <button>Ultimo</button>
+            </div>
+
+        </div>
+    </div>
+</section>

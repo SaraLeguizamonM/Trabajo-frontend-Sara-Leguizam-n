@@ -1,0 +1,75 @@
+<section>
+
+    <div class = 'filtro'>
+        <div class = 'filSeleccion'>
+            <label for = 'tipo'>Tipo de informe</label>
+            <select class = 'filtroInternoG' id = 'tipo' [(ngModel)]="tipoFiltro">
+                <option value="">Todos</option>
+                <option value="Informe de notas">Informe de notas</option>
+                <option value="Informe de asistencia">Informe de asistencia</option>
+            </select>
+        </div>
+
+        <div class = 'filSeleccion'>
+            <label for = 'fecha'>Fecha</label>
+            <input class = 'filtroInternoG' type = 'date' name = 'fechaBuscar' [(ngModel)]="fechaFiltro">
+        </div>
+
+        <div class = 'buttons'>
+            <button class = 'btnBuscar' (click)="filtrarInformes()">Buscar</button>
+            <a class = 'linkLimpiar' (click)="limpiarFiltros()">Limpiar</a>
+        </div>
+    </div>
+
+    <div class = 'tablas'>
+        <div class = 'resultados'>
+            <h2>Resultados</h2>
+
+            <div class="nResult">
+            <label for = 'mostrar'>Mostrar</label>
+                <select class = 'resultados' id = 'mostrar'>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            </div>
+        </div>
+
+        <div>
+            <table class = 'tabla'>
+                <thead>
+                    <th>Tipo de informe</th>
+                    <th>Fecha de generación</th>
+                    <th>Acciones</th>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let informe of filteredInformes" [ngClass]="{'color1': filteredInformes.indexOf(informe) % 2 !== 0}">
+                        <td>{{informe.tipo}}</td>
+                        <td>{{informe.fecha}}</td>
+                        <td>
+                            <div class = 'buttonsIcons'>
+                                <button class = 'btnBuscar'>Descargar</button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class = 'mostarNum'>
+            <h3>Mostrando {{filteredInformes.length}} de {{informes.length}} registros</h3>
+
+            <div class = 'num'>
+            <button>Primero</button> 
+            <button>1</button> 
+            <button>Ultimo</button> 
+            </div>
+        
+        </div>
+
+    </div>
+
+</section>

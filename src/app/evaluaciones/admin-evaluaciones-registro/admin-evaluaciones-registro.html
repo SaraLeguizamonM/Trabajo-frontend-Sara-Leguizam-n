@@ -1,0 +1,34 @@
+<section class="form-container">
+    <div class="form-group">
+        <label for="codigo">Código</label>
+        <input id="codigo" type="text" placeholder="Ingrese el código">
+    </div>
+
+    <div class="form-group">
+        <label for="estudiante">Estudiante</label>
+        <select id="estudiante">
+            <option value="">Seleccione</option>
+            <option value="estudiante1">Camila Fernández Rojas</option>
+            <option value="estudiante2">Juan Felipe Montoya Ríos</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="materia">Materia</label>
+        <select id="materia">
+            <option value="">Seleccione</option>
+            <option value="materia1">Matemáticas</option>
+            <option value="materia2">Ciencias</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="nota">Nota</label>
+        <input id="nota" type="number" placeholder="Ingrese la nota">
+    </div>
+
+    <div class="buttons">
+        <button class="btnCancelar" (click)="onCancel()">Cancelar</button>
+        <button class="btnBuscar">Guardar</button>
+    </div>
+</section>

@@ -1,0 +1,97 @@
+<section>
+
+    <div class = 'filtro'>
+        <div class = 'filSeleccion'>
+            <label for = 'buscarEst'>Estudiantes</label>
+            <input class = 'filtroInternoG' type = 'text' name = 'estudianteBuscar' placeholder = "Nombre del estudiante" [(ngModel)]="estudianteFiltro">
+        </div>
+
+        <div class = 'filSeleccion'>
+            <label for = 'materia'>Materia</label>
+            <select class = 'filtroInternoG' id = 'materia' [(ngModel)]="materiaFiltro">
+                <option value="">Todas</option>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Ciencias">Ciencias</option>
+                <option value="Historia">Historia</option>
+            </select>
+        </div>
+
+        <div class = 'filSeleccion'>
+            <label for = 'periodo'>Periodo</label>
+            <select class = 'filtroInternoG' id = 'periodo' [(ngModel)]="periodoFiltro">
+                <option value="">Todos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class = 'buttons'>
+            <button class = 'btnBuscar' (click)="filtrarEvaluaciones()">Buscar</button>
+            <a class = 'linkLimpiar' (click)="limpiarFiltros()">Limpiar</a>
+        </div>
+    </div>
+
+    <div class = 'tablas'>
+        <div class = 'resultados'>
+            <h2>Resultados</h2>
+
+            <div class="nResult">
+            <label for = 'mostrar'>Mostrar</label>
+                <select class = 'resultados' id = 'mostrar'>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            </div>
+        </div>
+
+        <div>
+            <table class = 'tabla'>
+                <thead>
+                    <th>Estudiante</th>
+                    <th>Materia</th>
+                    <th>Periodo</th>
+                    <th>Nota</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let evaluacion of filteredEvaluaciones" [ngClass]="{'color1': filteredEvaluaciones.indexOf(evaluacion) % 2 !== 0}">
+                        <td>{{evaluacion.estudiante}}</td>
+                        <td>{{evaluacion.materia}}</td>
+                        <td>{{evaluacion.periodo}}</td>
+                        <td>{{evaluacion.nota}}</td>
+                        <td>{{evaluacion.estado}}</td>
+                        <td>
+                            <div class = 'buttonsIcons'>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxE" alt="quipuxE">
+                                </button>
+                                <button class = 'iconImg'>
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
+                                </button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class = 'mostarNum'>
+            <h3>Mostrando {{filteredEvaluaciones.length}} de {{evaluaciones.length}} registros</h3>
+
+            <div class = 'num'>
+            <button>Primero</button> 
+            <button>1</button> 
+            <button>Ultimo</button> 
+            </div>
+        
+        </div>
+
+    </div>
+
+</section>

@@ -21,20 +21,8 @@
             </select>
         </div>
 
-        <div class = 'filSeleccion'>
-            <label for = 'id'>Identificación</label>
-            <div class="div-2col">
-                <input class = 'filtroInternoG' type = 'text' name = 'idBuscar' placeholder = "Numero de documento" [(ngModel)]="idFiltro">
-            </div>
-        </div>
-
-        <div class = 'filSeleccion'>
-            <label for = 'buscarEst'>Estudiantes</label>
-            <input class = 'filtroInternoG' type = 'text' name = 'nombreBuscar' placeholder = "Nombre del estudiante" [(ngModel)]="nombreFiltro">
-        </div>
-
         <div class = 'buttons'>
-            <button class = 'btnBuscar' (click)="filtrarEstudiantes()">Buscar</button>
+            <button class = 'btnBuscar' (click)="filtrarGrupos()">Buscar</button>
             <a class = 'linkLimpiar' (click)="limpiarFiltros()">Limpiar</a>
         </div>
     </div>
@@ -58,30 +46,26 @@
         <div>
             <table class = 'tabla'>
                 <thead>
-                    <th>Código</th>
-                    <th>Identificación</th>
-                    <th>Estudiante</th>
                     <th>Grado</th>
                     <th>Grupo</th>
-                    <th>Estado</th>
+                    <th>Jornada</th>
+                    <th>Número de estudiantes</th>
                     <th>Acciones</th>
                 </thead>
 
                 <tbody>
-                    <tr *ngFor="let estudiante of filteredEstudiantes" [ngClass]="{'color1': filteredEstudiantes.indexOf(estudiante) % 2 !== 0}">
-                        <td>{{estudiante.codigo}}</td>
-                        <td>{{estudiante.identificacion}}</td>
-                        <td>{{estudiante.nombre}}</td>
-                        <td>{{estudiante.grado}}</td>
-                        <td>{{estudiante.grupo}}</td>
-                        <td>{{estudiante.estado}}</td>
+                    <tr *ngFor="let grupo of filteredGrupos" [ngClass]="{'color1': filteredGrupos.indexOf(grupo) % 2 !== 0}">
+                        <td>{{grupo.grado}}</td>
+                        <td>{{grupo.grupo}}</td>
+                        <td>{{grupo.jornada}}</td>
+                        <td>{{grupo.numeroEstudiantes}}</td>
                         <td>
                             <div class = 'buttonsIcons'>
                                 <button class = 'iconImg'>
                                     <img [src]="imgQuipuxE" alt="quipuxE">
                                 </button>
                                 <button class = 'iconImg'>
-                                    <img [src]="imgQuipuxB" (click)="openDialog()"alt="quipuxB">
+                                    <img [src]="imgQuipuxB" alt="quipuxB">
                                 </button>
                             </div>
                             
@@ -91,14 +75,11 @@
             </table>
         </div>
         <div class = 'mostarNum'>
-            <h3>Mostrando {{filteredEstudiantes.length}} de {{estudiantes.length}} registros</h3>
+            <h3>Mostrando {{filteredGrupos.length}} de {{grupos.length}} registros</h3>
 
             <div class = 'num'>
             <button>Primero</button> 
             <button>1</button> 
-            <button>2</button>
-            <button>3</button> 
-            <button>4</button>
             <button>Ultimo</button> 
             </div>
         
